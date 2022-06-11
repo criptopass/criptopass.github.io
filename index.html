@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
+    
+    <title>Cripto.Pass</title>
+</head>
+<body>
+    <header>
+        <div class="center">
+             <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo-ice.png" alt="https://icons8.com.br/icons/set/password">
+                    </a>
+             </div><!--logo-->
+             <div class="menu">
+                <a href="#sobre">
+                    Sobre
+                </a>
+                 <a href="#contato">
+                     Contato
+                 </a>
+                 <a class="btn-menu" href="#password">
+                    Gerador de Senhas
+                </a>
+             </div><!--menu-->
+             <div class="menu-mobile">
+                <i class="fa-solid fa-bars menu-mobile-icon"></i>
+                <div class="menu-items">
+                    <a href="#sobre">Sobre</a>
+                    <a href="#contato">Contato</a>
+                    <a class="btn-menu-mobile" href="#password">Gerador de Senhas</a>
+                </div>
+             </div>
+        </div><!--center-->
+    </header>
+
+    <section class="main">
+        <div class="center">
+            <div class="main_cta">
+                <img src="images/pass7.png" alt="">
+                <p>Senhas seguras você encontra aqui.</p>
+                <p>Este é o <span style="color: #7ac8c6; font-weight: 510">Cripto.Pass</span></p>
+            </div><!--main_cta-->
+            
+
+        </div><!--center-->
+    </section><!--main-->
+
+    <section class="sobre" id="sobre">
+        <div class="center">
+            <div class="chamada-sobre">
+                <h2>Sobre</h2>
+                <p>Conheça sobre a Cripto.Pass</p>
+            </div><!--chamada-sobre-->
+            <div class="conteudo-sobre">
+                <p>A Cripto.Pass foi idealizado para ser um gerador de senhas simples e gratuito para aqueles que precisam de uma senha aleatória e segura. O projeto foi criado <a href="https://twitter.com/felipemaronezi" target="_blank"> <b>Felipe Maronezi</b></a>, utilizando HTML, CSS e JavaScript.</a>
+                <br>
+                <span><i class="fa-solid fa-angles-right"></i>⠀Selecione a quantidade de caracteres que deseja na sua senha (recomendado: até 15 caracteres);<br></span> 
+                <span><i class="fa-solid fa-angles-right"></i>⠀Escolha os tipos de caracteres que suas senhas possuirão;<br></span> 
+                <span><i class="fa-solid fa-angles-right"></i>⠀Faça quantas senhas quiser!<br></span> 
+                </p>
+            </div><!--conteudo-sobre-->
+        </div><!--center-->
+    </section><!--sobre-->
+
+    <section class="aviso">
+        <div class="center">
+            <div class="aviso-single">
+                <h2>SUA SEGURANÇA É IMPORTANTE</h2>
+                <p>Crie uma senha agora!</p>
+            </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <div class="center">
+           <!--<img class="contato-img" src="eu3.png">-->
+            <div class="contato-content">
+                <h2>Contato</h2>
+                <div class="contato-sobre"> <p>Caso queira entrar em contato, leia o texto abaixo! <br> <b>(NÃO MANDEM EMAILS DESNECESSÁRIOS, POR FAVOR)</b> </p></div>
+                <p>O projeto é simples e por isso pode passar por mudanças ao decorrer do tempo. Dessa forma, caso queiram dar alguma ideia sobre o que poderia ser adicionado, modificado, propor parcerias, dar um feedback (sobre o site/sobre a ideia) ou até entrar para a nossa equipe, peço que enviem uma mensagem no nosso email:<br><a class="btn-contato" href="mailto: icetera21@gmail.com"><b>> Enviar Email</b></a></p>
+            </div>
+        </div><!--center-->
+    </section><!--contato-->
+
+    <section class="aviso">
+        <div class="center">
+            <div class="aviso-single">
+                <h2>SUA SEGURANÇA É IMPORTANTE</h2>
+                <p>Crie uma senha agora!</p>
+            </div>
+    </section>
+
+    <section class="password" id="password">
+        <div class="pw-container">
+            <div class="pw-header">
+                <div class="pw">
+                    <span id="pw">&gt;Cripto.Pass</span>
+                    
+                </div>
+            </div>
+            <div class="pw-body">
+                <div class="form-control">
+                    <label for="len">Quantidade de Caracteres</label>
+                    <input id="len" value="15" type="number" min="2" max="30" />
+                </div>
+                <div class="form-control">
+                    <label for="upper">Conter Letras Maiúsculas</label>
+                    <input id="upper" type="checkbox" />
+                </div>
+                <div class="form-control">
+                    <label for="lower">Conter Letras Minúsculas</label>
+                    <input id="lower" type="checkbox" />
+                </div>
+                <div class="form-control">
+                    <label for="number">Conter Números</label>
+                    <input id="number" type="checkbox" />
+                </div>
+                <div class="form-control">
+                    <label for="symbol">Conter Caracteres Especiais</label>
+                    <input id="symbol" type="checkbox" />
+                </div>
+                <button class="generate" id="generate">
+                    GERAR SENHA
+                </button>
+                <button class="button" id="copy">
+                    Copiar
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="social">
+        <div class="center">
+            <div class="social-single">
+                <p><a href="https://twitter.com/felipemaronezi" target="blank">@felipemaronezi</a></p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://kit.fontawesome.com/9a66129654.js" crossorigin="anonymous"></script>
+    <script>
+
+        var el = document.querySelector('.menu-mobile-icon');
+
+        el.addEventListener('click', ()=> {
+            var menuItems = document.querySelector('.menu-items');
+            if(menuItems.classList.contains('show')){
+                menuItems.classList.add('hide');
+               menuItems.classList.remove('show');
+            }else{
+               menuItems.classList.add('show');
+               menuItems.classList.remove('hide');
+            }
+        });
+
+    </script>
+</body>
+</html>
